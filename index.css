@@ -1,5 +1,5 @@
 /*NAVEGADOR*/
-nav{
+.nav{
 	display: inline-block;
 	position: fixed;
 	background-color: gray;
@@ -46,6 +46,9 @@ a:hover{
 
 /*MOBILE RESPONSIVE DESIGN*/
 @media(max-width: 435px){
+	body{
+		background-color: #ddd;
+	}
 	/*NAVEGADOR*/
 	.nav{
 		display: inline-block;
@@ -60,9 +63,21 @@ a:hover{
 	a:hover{
 		font-size: 17px;
 	}
+	@keyframes tituloColor{
+		from{
+			color: black;
+		}to{
+			color: #ddd;
+		}
+	}
 	.titulo{
-		font-size: 14px;
-		top: 12px;
+		animation-name: tituloColor;
+		animation-iteration-count: infinite;
+		animation-duration: 2s;
+		animation-direction: alternate;
+		font-size: 13px;
+		font-family: sans-serif;
+		top: 15px;
 		left: 1%;
 	}
 	.inicio{
@@ -75,22 +90,28 @@ a:hover{
 	}
 	/*SUBTITULO1 PRODUCTOS Y PRECIO*/
 	.div_sub1{
+		text-align: center;
 		position: absolute;
 		width: 100%;
-		text-align: center;
 		margin-top: 8px;
 		top: 7%;
+		font-family: serif;
+		font-style: oblique;
 	}
-
 	/*PRODUCTOS EN ORDEN*/
 	.div_productos{
 		position: absolute;
 		top: 10%;
 	}
+	h4{
+		font-family: cursive;
+		font-style: italic;
+	}
 	/*CREMA*/
 	.div_crema{
 		display: inline-block;
 		width: 38%;
+		height: 85px;
 		text-align: center;
 		margin-top: 15px;
 		margin-left: 8%;
@@ -122,6 +143,7 @@ a:hover{
 	.imgYogurt{
 		width: 100%;
 		height: 100%;
+		box-shadow: 5px 5px 5px 0 gray;
 	}
 	/*YAKULT*/
 	.div_yakult{
@@ -133,6 +155,7 @@ a:hover{
 	.imgYakult{
 		width: 100%;
 		height: 100%;
+		box-shadow: 5px 5px 5px 0 gray;
 	}
 	/*CAJETA*/
 	.div_cajeta{
@@ -145,10 +168,26 @@ a:hover{
 		width: 100%;
 		height: 100%;
 		box-shadow: 5px 5px 5px 0 gray;
-		border: 5px solid  black;
-
 	}
-	.vid{
-		width: 200px;
+	.div_panela{
+		display: inline-block;
+		width: 38%;
+		text-align: center;
+		margin-left: 8%;
+	}
+	.imgPanela{
+		width: 100%;
+		height: 100%;
+		box-shadow: 5px 7px 7px 0px #aaa;
+	}
+
+	#info{
+		background-color: #bbb;
+		position: absolute;
+		width: 38%;
+		height: 85px;
+		top: 15px;
+		font-size: 12px;
+		visibility: hidden;
 	}
 }

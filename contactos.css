@@ -1,5 +1,5 @@
 /*NAVEGADOR*/
-nav{
+.nav{
 	display: inline-block;
 	position: fixed;
 	background-color: gray;
@@ -40,6 +40,10 @@ a:hover{
 	left: 1200px;
 }
 
+
+
+
+
 /*MOBILE RESPONSIVE DESIGN*/
 @media(max-width: 435px){
 	/*NAVEGADOR*/
@@ -57,15 +61,16 @@ a:hover{
 		font-size: 17px;
 	}
 	.titulo{
-		font-size: 15px;
+		font-size: 14px;
 		top: 12px;
-		left: 10px;
+		left: 1%;
 	}
 	.inicio{
-		top: 17px;
-		left: 43%;
+		top: 16px;
+		left: 45%;
 	}
 	.contacto{
-		top: 17px;
-		left: 65%;
+		top: 16px;
+		left: 70%;
 	}
+}
