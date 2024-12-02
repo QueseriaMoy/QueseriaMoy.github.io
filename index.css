@@ -61,17 +61,17 @@ a:hover{
 		font-size: 17px;
 	}
 	.titulo{
-		font-size: 15px;
+		font-size: 14px;
 		top: 12px;
-		left: 10px;
+		left: 1%;
 	}
 	.inicio{
-		top: 17px;
-		left: 43%;
+		top: 16px;
+		left: 45%;
 	}
 	.contacto{
-		top: 17px;
-		left: 65%;
+		top: 16px;
+		left: 70%;
 	}
 	/*SUBTITULO1 PRODUCTOS Y PRECIO*/
 	.div_sub1{
