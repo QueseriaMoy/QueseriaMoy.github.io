@@ -1,0 +1,154 @@
+/*NAVEGADOR*/
+nav{
+	display: inline-block;
+	position: fixed;
+	background-color: gray;
+	width: 100%;
+	padding: 27px;
+	z-index: 100;
+}
+li{
+	position: absolute;
+	display: inline-block;
+}
+
+/*ICONOS DEL NAVEGADOR*/
+i{
+	margin-right: 5px;
+}
+
+/*ELEMENTOS DEL NAVEGADOR*/
+.titulo{
+	position: absolute;
+	top: 20px;
+	left: 30px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: white;
+	font-size: 35px;
+}
+.inicio{
+	top: 20px;
+	left: 1000px;
+}
+.contacto{
+	top: 20px;
+	left: 1200px;
+}
+
+
+
+
+
+/*MOBILE RESPONSIVE DESIGN*/
+@media(max-width: 435px){
+	/*NAVEGADOR*/
+	.nav{
+		display: inline-block;
+		position: fixed;
+		padding: 27px;
+		width: 100%;
+	}
+	/*ELEMENTOS DEL NAVEGADOR (TITULO Y LINKS)*/
+	a{
+		font-size: 17px;
+	}
+	a:hover{
+		font-size: 17px;
+	}
+	.titulo{
+		font-size: 15px;
+		top: 12px;
+		left: 10px;
+	}
+	.inicio{
+		top: 17px;
+		left: 43%;
+	}
+	.contacto{
+		top: 17px;
+		left: 65%;
+	}
+	/*SUBTITULO1 PRODUCTOS Y PRECIO*/
+	.div_sub1{
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		margin-top: 8px;
+		top: 7%;
+	}
+
+	/*PRODUCTOS EN ORDEN*/
+	.div_productos{
+		position: absolute;
+		top: 10%;
+	}
+	/*CREMA*/
+	.div_crema{
+		display: inline-block;
+		width: 38%;
+		text-align: center;
+		margin-top: 15px;
+		margin-left: 8%;
+	}
+	.imgCrema{
+		width: 100%;
+		height: 100%;
+		box-shadow: 5px 5px 5px 0 gray;
+	}
+	/*OAXACA*/
+	.div_oaxaca{
+		display: inline-block;
+		width: 38%;
+		text-align: center;
+		margin-left: 8%;
+	}
+	.imgOaxaca{
+		width: 100%;
+		height: 100%;
+		box-shadow: 5px 5px 5px 0 gray;
+	}
+	/*YOGURT*/
+	.div_yogurt{
+		display: inline-block;
+		width: 38%;
+		text-align: center;
+		margin-left: 8%;
+	}
+	.imgYogurt{
+		width: 100%;
+		height: 100%;
+	}
+	/*YAKULT*/
+	.div_yakult{
+		display: inline-block;
+		width: 38%;
+		text-align: center;
+		margin-left: 8%;
+	}
+	.imgYakult{
+		width: 100%;
+		height: 100%;
+	}
+	/*CAJETA*/
+	.div_cajeta{
+		display: inline-block;
+		width: 38%;
+		text-align: center;
+		margin-left: 8%;
+	}
+	.imgCajeta{
+		width: 100%;
+		height: 100%;
+		box-shadow: 5px 5px 5px 0 gray;
+		border: 5px solid  black;
+
+	}
+	.vid{
+		width: 200px;
+	}
+}
