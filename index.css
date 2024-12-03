@@ -187,14 +187,14 @@ a:hover{
 		width: 38%;
 		height: 85px;
 		top: 16px;
-		padding: 5px;
 		visibility: hidden;
 	}
 	.info{
-		font-size: 13px;
+		margin-top: 5px;
+		font-size: 12px;
 	}
 	.agregar{
-		font-size: 16px;
+		font-size: 13px;
 	}
 
 	#carrito{
