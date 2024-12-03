@@ -27,12 +27,22 @@
 	</header>
 	<div class="div_sub1">
 		<h3 class="sub1">Productos y precios</h3>
+		<h5>Presione las imagenes para ver la información</h5>
 	</div>
 	<div class="div_productos">
 		<div class="div_crema">
 			<img src="casaCarlosLili2024.jpg" class="imgCrema" id="imgCrema">
 			<h4>Crema</h4>
-			<p id="info"><br>Chica 375ml Precio 30$<br><br><br>Grande 500ml Precio 40$</p>
+			<div id="cremas">
+    			<div id="producto" class="producto" data-id="1" data-nombre="CremaChica" data-precio="30">
+      				<p class="info">Crema chica Precio: $40</p>
+      				<button class="agregar">Agregar</button>
+    			</div>
+    			<div id="producto" class="producto" data-id="2" data-nombre="CremaGrande" data-precio="40">
+      				<p class="info">Crema Grande Precio: $40</p>
+      				<button class="agregar">Agregar</button>
+    			</div>
+    		</div>
 		</div>
 		<div class="div_oaxaca">
 			<img src="casaCarlosLili2024.jpg" class="imgOaxaca">
@@ -55,6 +65,13 @@
 			<h4>Panela</h4>
 		</div>
 	</div>
+
+	<div id="carrito">
+    	<h2>Carrito</h2>
+    	<ul id="lista-carrito"></ul>
+    	<br>
+    	<p>Total: $<span id="total">0</span></p>
+  	</div>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
