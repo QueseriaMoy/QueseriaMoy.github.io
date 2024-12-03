@@ -67,8 +67,10 @@ function actualizarCarrito() {
   // Renderizar cada producto del carrito
   carrito.forEach((producto) => {
     const li = document.createElement("li");
+    const salto = document.createElement("br");
     li.textContent = `${producto.nombre} - $${producto.precio} x ${producto.cantidad}`;
     listaCarrito.appendChild(li);
+    listaCarrito.innerHTML+="<br>";
   });
 
   // Calcular y mostrar el total
