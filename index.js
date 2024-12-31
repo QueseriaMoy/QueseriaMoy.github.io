@@ -1,22 +1,6 @@
-/*const vaso = document.getElementById("vaso");
-const casa = document.getElementById("casa");
-const antes = document.getElementById("antes");
-const despues = document.getElementById("despues");
 
-function cam(){
-  antes.style.visibility = "hidden";
-  despues.style.visibility = "visible";
-}
-function cam1(){
-  antes.style.visibility = "visible";
-  despues.style.visibility = "hidden";  
-}
 
-  vaso.addEventListener("click", cam);
-  casa.addEventListener("click", cam1);
-*/
-
-let cremaInfo = document.getElementById("cremas");
+/*let cremaInfo = document.getElementById("cremas");
 let cremaImg = document.getElementById("imgCrema");
 
 function mostrarInfoCrema(){
@@ -28,7 +12,30 @@ function mostrarImgCrema(){
 
 cremaImg.addEventListener("click", mostrarInfoCrema);
 cremaInfo.addEventListener("click", mostrarImgCrema);
+*/
 
+let ventanaInfo = document.getElementById("ventanaInfo");
+let producto = document.getElementById("producto");
+let imagen1 = document.getElementById("imagen1");
+let tipo1 = document.getElementById("tipo1");
+let imagen2 = document.getElementById("imagen2");
+let tipo2 = document.getElementById("tipo2");
+let tacha = document.getElementById("tacha");
+
+//CREMA
+let cremaImg = document.getElementById("imgCrema");
+cremaImg.addEventListener("click", function () {
+  ventanaInfo.style.visibility = "visible";
+  producto.textContent = "Crema";
+  imagen1.src = "crema.webp";
+  tipo1.textContent = "Chica 30$";
+  imagen2.src = "crema.webp";
+  tipo2.textContent = "Grande 40$";
+});
+
+tacha.addEventListener("click", function (){
+  ventanaInfo.style.visibility = "hidden";
+});
 
 /*CARRITO*/
 /*const carrito = [];
