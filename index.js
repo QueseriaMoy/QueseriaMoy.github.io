@@ -22,6 +22,11 @@ let imagen2 = document.getElementById("imagen2");
 let tipo2 = document.getElementById("tipo2");
 let tacha = document.getElementById("tacha");
 
+//BOTON TACHA PARA QUITAR VENTANA
+tacha.addEventListener("click", function (){
+  ventanaInfo.style.visibility = "hidden";
+});
+
 //CREMA
 let cremaImg = document.getElementById("imgCrema");
 cremaImg.addEventListener("click", function () {
@@ -33,8 +38,15 @@ cremaImg.addEventListener("click", function () {
   tipo2.textContent = "Grande 40$";
 });
 
-tacha.addEventListener("click", function (){
-  ventanaInfo.style.visibility = "hidden";
+//OAXACA
+let oaxacaImg = document.getElementById("imgOaxaca");
+oaxacaImg.addEventListener("click", function(){
+  ventanaInfo.style.visibility = "visible";
+  producto.textContent = "Oaxaca";
+  imagen1.src = "oaxaca.webp";
+  tipo1.textContent = "1/2 kilo 70$";
+  imagen2.src = "oaxaca.webp";
+  tipo2.textContent = "1 kilo 140$";
 });
 
 /*CARRITO*/
